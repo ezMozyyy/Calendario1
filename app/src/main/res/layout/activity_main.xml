@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nome"
+        app:layout_constraintBottom_toTopOf="@+id/cognome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/cognome"
+        android:layout_width="116dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Cognome"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="107dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="2dp"
+        android:text="Nome"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/nome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Cognome"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/cognome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="40dp"
+        android:text="Sesso"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/sesso"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:text="Data di nascita"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/DataNascita"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Interessi"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/DataNascita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sesso" />
+
+    <CheckBox
+        android:id="@+id/tecnologia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tecnologia"
+        app:layout_constraintEnd_toStartOf="@+id/DataNascita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <CheckBox
+        android:id="@+id/arte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arte"
+        app:layout_constraintEnd_toStartOf="@+id/DataNascita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tecnologia" />
+
+    <CheckBox
+        android:id="@+id/musica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Musica"
+        app:layout_constraintEnd_toStartOf="@+id/DataNascita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arte" />
+
+    <CheckBox
+        android:id="@+id/sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport"
+        app:layout_constraintEnd_toStartOf="@+id/DataNascita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musica" />
+
+    <CheckBox
+        android:id="@+id/auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto"
+        app:layout_constraintEnd_toStartOf="@+id/DataNascita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sport" />
+
+    <DatePicker
+        android:id="@+id/DataNascita"
+        android:layout_width="238dp"
+        android:layout_height="386dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/genera"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/genera"
+        android:layout_width="414dp"
+        android:layout_height="39dp"
+        android:onClick="generaResoconto"
+        android:text="GENERA RIASSUNTO"
+        app:layout_constraintBottom_toTopOf="@+id/riassunto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/riassunto"
+        android:layout_width="408dp"
+        android:layout_height="97dp"
+        android:text="TESTO RIASSUNTO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/sesso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/sesso"
+        tools:layout_editor_absoluteY="150dp">
+
+        <RadioButton
+            android:id="@+id/sesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="1dp"
+            android:text="Donna" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uomo" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
